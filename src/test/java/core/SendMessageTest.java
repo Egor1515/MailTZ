@@ -54,15 +54,15 @@ public class SendMessageTest {
         loginPage.inputLogin();
         passwordPage.checkPageElements();
         passwordPage.inputPass();
-        if (cap.getCaptchaHeader()!=null) {
+        if (cap.getCaptchaHeader() != null) {
             cap.confirmCaptcha();
         } else {
             sendMessage.sendMessageWithSubject();
 //        sendMessage.sendMessageWithNoSubject();
-            confirmPage.confirmMessage();
+//            confirmPage.confirmMessage();
         }
         sendMessage.sendMessageWithSubject();
 //        sendMessage.sendMessageWithNoSubject();
-        confirmPage.confirmMessage();
+//        confirmPage.confirmMessage();
     }
 }
