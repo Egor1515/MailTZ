@@ -10,7 +10,7 @@ public class ConfigProperties {
 
     static {
         try {
-            fileInputStream = new FileInputStream("/Users/egorbondar/MailPage/src/test/java/core/resources/config.properties");
+            fileInputStream = new FileInputStream("/Users/egorbondar/IdeaProjects/MailRu/MailPage/src/test/java/core/resources/config.properties");
             PROPERTIES = new Properties();
             PROPERTIES.load(fileInputStream);
         } catch (IOException e) {
